@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>💡Consejos</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button id="modo-toggle">🌙 Modo oscuro</button>
+    <nav>
+        <a href="../index.html">Inicio</a> |
+        <a href="../asignaturas.html">Asignaturas</a>
+    </nav>
+
+    <h1>💡Consejos</h1>
+     <script>
+    const botonModo = document.getElementById("modo-toggle");
+botonModo.addEventListener("click", () =>{
+    document.body.classList.toggle("modo-oscuro");
+
+    if(document.body.classList.contains("modo-oscuro")){
+        botonModo.textContent="☀️Modo Claro";
+    } else{
+        botonModo.textContent="🌙Modo Oscuro"
+    }
+});
+  </script>
+</body>
+</html>
