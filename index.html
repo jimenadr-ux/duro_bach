@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button id="modo-toggle">🌙 Modo oscuro</button>
+    <nav>
+        <a href="index.html"> Inicio </a>
+        <a href="asignaturas.html"> Asignaturas </a>
+         <a href="contacto.html"> Contacto </a>
+    </nav>
+<header class="hero">
+    <h1>DURO BACH</h1>
+    <p>Tu web de confianza para 2º de bachillerato y la PAU</p>
+</header>
+<section class="citas">
+    <div class="tarjeta">"El esfuerzo de hoy es el éxito de mañana."</div>
+    <div class="tarjeta">"No hay atajo hasta la cima."</div>
+    <div class="tarjeta">"Confía en tu proceso."</div>
+</section>
+
+<section class="sobre">
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/78/a3/13/78a31389e8df2b528c79d845bd00f575.jpg" alt="foto" />
+    </div>
+    <div class="texto">
+        <h2>Sobre la web</h2>
+        <p>DuroBach nace para ayudarte a organizar, repasar y dominar todas tus asignaturas de 2º de Bachillerato. Aquí encontrarás apuntes, exámenes, ejercicios y consejos.</p>
+        <p>Hecha con cariño por alguien que estuvo donde tú estás 💖.</p>
+    </div>
+</section>
+    <script>
+    const botonModo = document.getElementById("modo-toggle");
+botonModo.addEventListener("click", () =>{
+    document.body.classList.toggle("modo-oscuro");
+
+    if(document.body.classList.contains("modo-oscuro")){
+        botonModo.textContent="☀️Modo Claro";
+    } else{
+        botonModo.textContent="🌙Modo Oscuro"
+    }
+});
+  </script>
+</body>
+</html>
